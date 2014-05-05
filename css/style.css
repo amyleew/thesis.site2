@@ -131,6 +131,7 @@ height: 100%;
 .chart {
   margin: 10px;
   padding: 30px 0px 30px 0px;
+  width: 90%;
 }
 
 #footer {
