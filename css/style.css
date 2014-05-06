@@ -8,6 +8,19 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+/*video begin */
+
+.videotext{  font-family: 'Open Sans', sans-serif;
+             font-size:15px;
+       letter-spacing:2px;
+             margin-top:30px;
+       margin-bottom: 30px;
+            text-align:center;}   
+      
+           
+/*video end */
+
+
 .myIframe {
   height: inherit;
 }
@@ -172,6 +185,10 @@ header .dropdown-menu {
 
 h1 {
   font-size:50px;
+}
+
+h2 .a {
+  cursor: default;
 }
 
 .logo {
