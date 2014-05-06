@@ -20,14 +20,13 @@
 
 
 
-    <body>
+<body>
  
 
-        <!-- Wrap all page content here -->
+<!-- Wrap all page content here -->
 <div id="wrap">
 
 <!-- Section 1 :: Exhibition -->
-
 <div class="divider" id="section1"></div>
  
 <header class="masthead">
@@ -136,9 +135,6 @@
 
 
 
-<!--
-<iframe src="//player.vimeo.com/video/82254598" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
--->
 <p>&nbsp;</p>
     </div>
       
@@ -529,8 +525,8 @@
       <a class="media" data-toggle="modal" id="trigger" data-target="#essayModal">ESSAY</a>
 
       <div id="dialog" style="display:none">
-        <div>
-          <iframe width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen src="images/2222.pdf"></iframe>
+        <div class="myIframe"> <!-- make it be full length by adding height inherit and remove from below height="100%"-->
+          <iframe class="iFrameHeight" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen src="images/2222.pdf"></iframe>
 
 
 
@@ -631,6 +627,7 @@
         <!-- Other js code -->
         <script type='text/javascript' src="js/onePageNav.js"></script>
         <script type='text/javascript'  src="js/modernizr.custom.js"></script>
+     
         <!-- embedd PDF js -->
         <script src="js/jquery-ui-1.10.4.custom.js"></script>
         <script language="javascript" type="text/javascript">
@@ -640,6 +637,7 @@
           }); 
         });     
         </script>             
+    
         <!-- Goolge Grid Gallery js code -->
         <script type='text/javascript'  src="js/imagesloaded.pkgd.min.js"></script>
         <script type='text/javascript'  src="js/masonry.pkgd.min.js"></script>
