@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -15,21 +14,26 @@
         <!-- CSS code  -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/gridGallery_component.css" rel="stylesheet">
+        <link href="css/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+        <!-- video css code -->
+        <link href="css/video-js.css" rel="stylesheet">
     </head>
     
 
 
 
-    <body>
+<body>
  
 
-        <!-- Wrap all page content here -->
+<!-- Wrap all page content here -->
 <div id="wrap">
 
+<!-- Section 1 :: Exhibition -->
+<div class="divider" id="section1"></div>
  
 <header class="masthead">
 
-    <!-- Carousel
+  	<!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide">
       <!-- Indicators -->
@@ -40,7 +44,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img src="images/heros/heroHome.jpg">
+          <img src="images/exhibition/1.png">
           <div class="container">
             <div class="logo">
               <h2> </h2>
@@ -49,7 +53,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/heros/heros2.jpg">
+          <img src="images/exhibition/2.png">
           <div class="container">
             <div class="logo">
               <h2> </h2>
@@ -58,7 +62,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/heros/heros3.jpg">
+          <img src="images/exhibition/3.png">
           <div class="container">
             <div class="logo">
               <h2> </h2>
@@ -96,7 +100,7 @@
           <li><a href="#section1">Exhibition</a></li>
           <li><a href="#section2">System</a></li>
               <li><a href="#section3">Process</a></li>
-              <li><a href="#">Essay</a></li>
+              <li><a href="#section4">Essay</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div><!--/.container -->
@@ -117,8 +121,18 @@
 <div class="container">
   <div class="col-sm-10 col-sm-offset-1">
     <div class="page-header text-center">
-
+    
+      
 <iframe src="//player.vimeo.com/video/94255843" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+   <!-- end video-->
+
+
+
+</div>
+</div>
+
+
 
 <p>&nbsp;</p>
     </div>
@@ -154,7 +168,7 @@
 
 <div class="row">
 
-    <div class="col-sm-10 col-sm-offset-1">
+  	<div class="col-sm-10 col-sm-offset-1">
 
           <div class="container">
 
@@ -504,7 +518,21 @@
 
         <!-- blank spacer with image and content -->
 
-    <h2 class="secBreak"><a class="media" href="images/2222.pdf">ESSAY</a></h2>
+    <h2 class="secBreak">
+      <!--<a class="media" href="">ESSAY</a>-->
+
+      <a class="media" data-toggle="modal" id="trigger" data-target="#essayModal">ESSAY</a>
+
+      <div id="dialog" style="display:none">
+        <div class="myIframe"> <!-- make it be full length by adding height inherit and remove from below height="100%"-->
+          <iframe class="iFrameHeight" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen src="images/2222.pdf"></iframe>
+
+
+
+        </div>
+      </div> 
+
+    </h2>
 
 
   </div>
@@ -556,13 +584,13 @@
   <div class="modal-dialog">
   <div class="modal-content">
 
-    <div class="modal-header">
-        <button class="close" type="button" data-dismiss="modal">×</button>
-        <h3 class="modal-title"></h3>
-    </div>
+	<div class="modal-header">
+		<button class="close" type="button" data-dismiss="modal">×</button>
+		<h3 class="modal-title"></h3>
+	</div>
 
-    <div class="modal-body">
-        <div id="modalCarousel" class="carousel">
+	<div class="modal-body">
+		<div id="modalCarousel" class="carousel">
          
           <div class="carousel-inner"></div>
           
@@ -570,16 +598,21 @@
           <a class="carousel-control right" href="#modalCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
           
     </div>
-    </div>
+	</div>
 
-    <div class="modal-footer">
-        <button class="btn btn-default" data-dismiss="modal">Close</button>
-    </div>
+	<div class="modal-footer">
+		<button class="btn btn-default" data-dismiss="modal">Close</button>
+	</div>
 
   </div>
   </div>
 </div>
 
+<!-- end Modal -->
+
+
+
+<!-- ESSAY Modal -->
 
 
 
@@ -593,12 +626,20 @@
         <!-- Other js code -->
         <script type='text/javascript' src="js/onePageNav.js"></script>
         <script type='text/javascript'  src="js/modernizr.custom.js"></script>
+     
         <!-- embedd PDF js -->
-        <script type="text/javascript" src="js/jquery.media.js?v0.92"></script> 
-        <script type="text/javascript" src="js/jquery.metadata.js"></script> 
-        <script>
-          $('a.media').media({width:80%, height:400});
-        </script>
+        <script src="js/jquery-ui-1.10.4.custom.js"></script>
+        <script language="javascript" type="text/javascript">
+        $(document).ready(function() {
+          $('#trigger').click(function(){
+            $("#dialog").dialog();
+          }); 
+        });     
+        </script>         
+
+        <!-- video js -->
+        <script src="js/video.js"></script>    
+    
         <!-- Goolge Grid Gallery js code -->
         <script type='text/javascript'  src="js/imagesloaded.pkgd.min.js"></script>
         <script type='text/javascript'  src="js/masonry.pkgd.min.js"></script>
