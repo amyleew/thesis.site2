@@ -15,6 +15,9 @@
         <!-- CSS code  -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/gridGallery_component.css" rel="stylesheet">
+                <!-- video  -->
+        <link href="css/video-js.css" rel="stylesheet">
+
     </head>
     
 
@@ -120,16 +123,18 @@
 <div class="container">
 
 
-<video width="500" height="375" controls>
-  <source src="mov/ThesisAnimation.mp4" type="video/mp4">
-  <source src="mov/ThesisAnimation.ogg" type="video/ogg">
-  <object data="movThesisAnimation.mp4" width="500" height="375">
-    <embed src="mov/ThesisAnimation.swf" width="500" height="375">
-  </object> 
-</video>
+       <!-- video-->
+      <div id="video" class="video"> 
+          
+       <video id="my_video_1" class="video-js vjs-default-skin" controls
+        preload="auto" width="500" height="375" poster="images/video-cover.jpg"
+        data-setup="{}">
+        <source src="mov/ThesisAnimation.mp4" type='video/mp4'>
+        <source src="mov/ThesisAnimation.webmhd.webm" type='video/webm'>
+      </video>
 
-
-<p>&nbsp;</p>
+      </div>
+      <p></p>
 
 </div>
 
@@ -368,21 +373,19 @@
             </li>
             <li>
                 <figure>
-                    <figcaption><h3>Bubble Concept Sketches</h3><p>Representation of bubbles across differnent themes or properties. </p></figcaption>
+                    <figcaption><h3>Bubble Bot 2.0</h3><p>I built an Ardunio powered robot that blew bubbles to better observe of their behaviors </p></figcaption>
                     <img src="images/gallery/large/23.png" alt="img02"/>
                 </figure>
             </li>
             <li>
                 <figure>
-                     <figcaption><h3>Bubble Formations</h3><p>120 degree meeting point of all bubble formations.</p></figcaption>
+                     <figcaption><h3>Bubble Concept Sketches</h3><p>Representation of bubbles across different themes or properties.</p></figcaption>
                     <img src="images/gallery/large/2.png" alt="img2"/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <figcaption>
-                        <h3>Generative pattern making (Rhino)</h3>
-                        <p>Exploring generative pattern making using 3D modeling software, Rhino. Using grids, points and the Grasshopper plug-in.</p>
+                    <figcaption><h3>Bubble Bot 2.0</h3><p>In action, blowing a huge bubble cluster.</p>
                     </figcaption>
                     <img src="images/gallery/large/22.png" alt="img22"/>
                 </figure>
@@ -390,8 +393,7 @@
             <li>
                 <figure>
                     <figcaption>
-                        <h3>Laser-cut Material</h3>
-                        <p>I used the laser cutter to cut and etch my Rhino generated patterns in both paper and acryic.</p>
+                        <h3>Bubble Formations</h3><p>120 degree meeting point of all bubble formations.</p>
                     </figcaption>
                     <img src="images/gallery/large/3.png" alt="img05"/>
                 </figure>
@@ -399,7 +401,8 @@
             <li>
                 <figure>
                     <figcaption>
-                        <h3>Acrylic Testing</h3>
+                        <h3>Generative pattern making (Rhino)</h3>
+                        <p>Exploring generative pattern making using 3D modeling software, Rhino. Using grids, points and the Grasshopper plug-in.
                     </figcaption>
                     <img src="images/gallery/large/4.png" alt="img04"/>
                 </figure>
@@ -407,34 +410,44 @@
             <li>
                 <figure>
                     <figcaption>
-                        <h3>Paper Testing</h3>
+                        <h3>Laser-cutting</h3>
+                        <p>I used the laser cutter to cut and etch my Rhino generated patterns in both paper and acrylic.
                     </figcaption>
                     <img src="images/gallery/large/5.png" alt="img05"/>
-                </figure>
-            </li>
-                        <li>
-                <figure>
-                    <figcaption><h3>Arduino Schematic</h3><p>Analog inputs and LED outputs.</p></figcaption>
-                    <img src="images/gallery/large/6.png" alt="img06"/>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <figcaption><h3>Pinwheel Sketches</h3><p>Concepting contraption and functional parts.</p></figcaption>
-                    <img src="images/gallery/large/7.png" alt="img07"/>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                     <figcaption><h3>Pinwheel Interaction Prototypes</h3><p>Working pinwheel (analog) input and LED output system.</p></figcaption>
-                    <img src="images/gallery/large/9.png" alt="img09"/>
                 </figure>
             </li>
             <li>
                 <figure>
                     <figcaption>
-                        <h3>Pinwheel Prototypes</h3>
-                        <p>Construction of pressfit and motor attached to pinwheel to make it function as input recorder for breath variables.</p>
+                        <h3>Laser-cut Materials :: Acrylic</h3>
+                        <p>I used the laser cutter to cut and etch my Rhino generated patterns in both paper and acrylic.
+                        </p></figcaption>
+                    <img src="images/gallery/large/6.png" alt="img06"/>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <figcaption><h3>Laser-cut Materials :: Paper</h3>
+                        <p>I used the laser cutter to cut and etch my Rhino generated patterns in both paper and acrylic.
+                        </p></figcaption>
+                    <img src="images/gallery/large/7.png" alt="img07"/>
+                </figure>
+            </li>
+
+            
+            <li>
+                <figure>
+                     <figcaption>
+                        <h3>Input Device Sketches</h3><p>Determining what the input device needed formally and functionally.
+                        </p></figcaption>
+                    <img src="images/gallery/large/9.png" alt="img09"/>
+                </figure>
+            </li>
+
+            <li>
+                <figure>
+                    <figcaption>
+                        <h3>Arduino Schematic</h3><p>Analog inputs and LED outputs.</p>
                     </figcaption>
                     <img src="images/gallery/large/8.png" alt="img08"/>
                 </figure>
@@ -442,8 +455,8 @@
              <li>
                 <figure>
                     <figcaption>
-                        <h3>RGB LEDs</h3>
-                        <p>Programming RGB LED strip to animate through color spectrum. Also prototyping acrylic laminated spheres as holder for light. #video</p>
+                        <h3>Pinwheel Prototype</h3>
+                        <p>Construction of pressfit and motor attached to pinwheel to make it function as input recorder for breath variables.</p>
                     </figcaption>
                     <img src="images/gallery/large/10.png" alt="img10"/>
                 </figure>
@@ -451,8 +464,8 @@
             <li>
                 <figure>
                     <figcaption>
-                        <h3>Burst Light</h3>
-                        <p>Working model. #video
+                        <h3>Pinwheel Prototype</h3>
+                        <p>Actual pinwheel fabrication and testing.</p>
                     </figcaption>
                     <img src="images/gallery/large/11.png" alt="img11"/>
                 </figure>
@@ -461,7 +474,7 @@
                 <figure>
                     <figcaption>
                         <h3>RGB LEDs</h3>
-                        <p>Programming RGB LED strip to animate through color spectrum. Also prototyping acrylic laminated spheres as holder for light. #video</p>
+                        <p>Programming RGB LED strip to animate through color spectrum. Also prototyping acrylic laminated spheres as holder for light.</p>
                     </figcaption>
                     <img src="images/gallery/large/12.png" alt="img12"/>
                 </figure>
@@ -475,8 +488,8 @@
             <li>
                 <figure>
                     <figcaption>
-                        <h3>Burst Light</h3>
-                        <p>Working model. #video
+                        <h3>Interaction</h3>
+                        <p>Experiencing the breath animation during Thesis Exhibition.</p>
                     </figcaption>
                     <img src="images/gallery/large/26.png" alt="img26"/>
                 </figure>
@@ -484,42 +497,47 @@
             <li>
                 <figure>
                     <figcaption>
-                        <h3>Burst Light</h3>
+                        <h3>Interaction</h3>
+                        <p>Experiencing the breath animation during Thesis Exhibition.</p>
                     </figcaption>
                     <img src="images/gallery/large/16.png" alt="img16"/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <figcaption><h3>Code Base</h3><p>Programming between Arduino and Processing, Analog and Digital, Inputs and Outputs. A maker is a coder is a designer. </p></figcaption>
+                    <figcaption><h3>Pinwheel</h3><p>Thesis Exhibition.</p></figcaption>
                     <img src="images/gallery/large/14.png" alt="img14"/>
                 </figure>
             </li>
            
             <li>
                 <figure>
-                     <figcaption><h3>Exhibiton :: Iput Device </h3><p>120 degree meeting point of all bubble formations.</p></figcaption>
+                     <figcaption>
+                        <h3>Interaction</h3>
+                        <p>Experiencing the breath animation during Thesis Exhibition.
+                        </figcaption>
                     <img src="images/gallery/large/17.png" alt="img17"/>
                 </figure>
             </li>
             <li>
                 <figure>
                     <figcaption>
-                        <h3>Exhibition :: Blower</h3>
+                        <h3>Interaction</h3>
+                        <p>Experiencing the breath animation during Thesis Exhibition.
                     </figcaption>
                     <img src="images/gallery/large/18.png" alt="img18"/>
                 </figure>
             </li>
              <li>
                 <figure>
-                    <figcaption><h3>Exhibition :: Output Animation</h3><p>50" screen displayed animation of virtual bubble.</p></figcaption>
+                    <figcaption><h3>Animated Bubble</h3><p>50" screen displayed animation of virtual bubble.</p></figcaption>
                     <img src="images/gallery/large/20.png" alt="img20"/>
                 </figure>
             </li>
             <li>
                 <figure>
                     <figcaption>
-                        <h3>Exhibition :: Blow 3</h3>
+                    <figcaption><h3>Animated Bubble</h3><p>50" screen displayed animation of virtual bubble.</p></figcaption>
                     </figcaption>
                     <img src="images/gallery/large/19.png" alt="img19"/>
                 </figure>
@@ -579,7 +597,7 @@
 
         <!-- blank spacer with image and content -->
 
-    <h2 class="secBreak"><a class="media" href="images/2222.pdf">ESSAY</a></h2>
+    <h2 class="secBreak"><a class="media" href="images/ThesisEssay5.pdf">THESIS ESSAY</a></h2>
 
 
   </div>
@@ -669,6 +687,10 @@
         <!-- Other js code -->
         <script type='text/javascript' src="js/onePageNav.js"></script>
         <script type='text/javascript'  src="js/modernizr.custom.js"></script>
+
+                <!-- video js code -->
+                <script src="http://vjs.zencdn.net/c/video.js"></script>
+
         <!-- Goolge Grid Gallery js code -->
         <script type='text/javascript'  src="js/imagesloaded.pkgd.min.js"></script>
         <script type='text/javascript'  src="js/masonry.pkgd.min.js"></script>
