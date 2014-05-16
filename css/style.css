@@ -45,6 +45,10 @@ body {
            
 /*video end */
 
+.video-wrapper {
+  background-color: white;
+
+}
 
 .myIframe {
   height: inherit;
@@ -61,7 +65,7 @@ body {
 }
 .video {
   position: relative;
-  height: 500px;
+  height: 400px;
   overflow: hidden;
   text-align: center;
   padding-left: 30%;
