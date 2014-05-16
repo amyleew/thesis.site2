@@ -47,7 +47,6 @@ body {
 
 .video-wrapper {
   background-color: white;
-
 }
 
 .myIframe {
@@ -70,6 +69,7 @@ body {
   text-align: center;
   padding-left: 30%;
   background-color: white;
+
 }
 
 .video iframe,  
@@ -77,8 +77,8 @@ body {
 .video embed {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 20%;
+  width: 70%;
   height: 100%;
 
 }
